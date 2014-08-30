@@ -241,4 +241,8 @@ namespace tesseract {
     _tesseract->SetImage((const unsigned char *) _pixels, width, height, sizeof(uint32_t), width * sizeof(uint32_t));
 }
 
+- (void)setRectangle:(CGRect)rect {
+    _tesseract->SetRectangle(rect.origin.x, rect.origin.y, rect.size.width, rect.size.height);
+}
+
 @end

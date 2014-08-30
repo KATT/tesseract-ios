@@ -69,5 +69,6 @@ extern NSString * const OcrEngineModeDefault;
 - (BOOL)recognize;
 - (NSString *)recognizedText;
 - (void)clear;
+- (void)setRectangle: (CGRect)rect;
 
 @end
